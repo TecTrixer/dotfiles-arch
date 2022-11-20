@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-xrandr --output DP-2 --right-of DVI-I-1
+xrandr --output DP-2 --right-of DVI-I-1 --mode 2560x1440 --rate 143.97
 bspc monitor DVI-I-1 -d browser spotify discord 4 5
 bspc monitor DP-2 -d code stuff 8 9 10
 
