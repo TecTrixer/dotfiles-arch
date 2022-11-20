@@ -12,3 +12,19 @@ bspc config window_gap           2
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+
+polybar &
+bspc desktop -f ^1
+brave &
+sleep 1
+bspc desktop -f ^6
+kitty &
+sleep 1
+bspc desktop -f ^2
+bspc config split_ratio          0.40
+spotify &
+sleep 1
+discord &
+sleep 5
+bspc config split_ratio          0.50
+
