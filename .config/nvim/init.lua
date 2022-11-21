@@ -1,6 +1,7 @@
 require('general-settings')
 require('plugin-manager')
 require('discord-presence')
+require('treesitter')
 require('fileexplorer')
 require('comments')
 require('hopping')
