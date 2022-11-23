@@ -37,10 +37,18 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 
+-- Snippet Engine (LuaSnip, snippet repo)
+Plug 'L3MON4D3/LuaSnip'
+-- Plug 'rafamadriz/friendly-snippets'
+Plug 'saadparwaiz1/cmp_luasnip'
+
 -- Tagbar for navigation in the current file
 Plug 'preservim/tagbar'
 
 -- Handling Git Stuff
 Plug 'tpope/vim-fugitive'
+
+-- Latex Stuff
+Plug 'lervag/vimtex'
 
 vim.call('plug#end')

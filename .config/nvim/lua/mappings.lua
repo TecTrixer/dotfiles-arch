@@ -19,6 +19,11 @@ vim.api.nvim_set_keymap('n', '<Leader>cd', ':w<CR>:bel 20sp | term cargo run<CR>
 vim.api.nvim_set_keymap('n', '<Leader>cr', ':w<CR>:bel 20sp | term cargo run --release<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<Leader>cb', ':w<CR>:bel 20sp | term cargo build --release<CR>', {noremap = true})
 
+-- Advent of Code specific keymaps
+vim.api.nvim_set_keymap('n', '<Leader>ad', ':bel 20sp | term aoc d<CR>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<Leader>ar', ':bel 20sp | term aoc r > description.md && glow description.md<CR>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<Leader>as', ':bel 20sp | term aoc s ', {noremap = true})
+
 -- Automatically close references window
 vim.api.nvim_create_autocmd("FileType", {
     callback = function()

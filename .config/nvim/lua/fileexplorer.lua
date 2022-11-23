@@ -17,6 +17,7 @@ require("nvim-tree").setup({
       list = {
         { key = "u", action = "dir_up" },
         { key = "<C-s>", action = "vsplit" },
+        { key = "o", action = "cd" },
       },
     },
   },
