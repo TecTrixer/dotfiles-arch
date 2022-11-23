@@ -23,4 +23,18 @@ return {
     ]],
     {i(1), i(2), i(3)}, { delimiters = "$%" })
    ),
+  s('lt', fmta(
+    [[
+      let $%: $% = $%;
+      $%
+    ]],
+    {i(1), i(2), i(3), i(4)}, { delimiters = "$%" })
+   ),
+  s('lm', fmta(
+    [[
+      let mut $%: $% = $%;
+      $%
+    ]],
+    {i(1), i(2), i(3), i(4)}, { delimiters = "$%" })
+   ),
 }

@@ -6,10 +6,10 @@
 -- imap <silent><expr> <C-Left> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
 -- smap <silent><expr> <C-Left> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
 -- ]])
-vim.api.nvim_set_keymap('i', '<S-Left>', '<Plug>luasnip-jump-prev', {noremap = false})
-vim.api.nvim_set_keymap('i', '<S-Right>', '<Plug>luasnip-expand-or-jump', {noremap = false})
-vim.api.nvim_set_keymap('s', '<S-Left>', '<Plug>luasnip-jump-prev', {noremap = false})
-vim.api.nvim_set_keymap('s', '<S-Right>', '<Plug>luasnip-jump-next', {noremap = false})
+vim.api.nvim_set_keymap('i', '<Left>', '<Plug>luasnip-jump-prev', {noremap = false})
+vim.api.nvim_set_keymap('i', '<Right>', '<Plug>luasnip-expand-or-jump', {noremap = false})
+vim.api.nvim_set_keymap('s', '<Left>', '<Plug>luasnip-jump-prev', {noremap = false})
+vim.api.nvim_set_keymap('s', '<Right>', '<Plug>luasnip-jump-next', {noremap = false})
 
 
 require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"})
