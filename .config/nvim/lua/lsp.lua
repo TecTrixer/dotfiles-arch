@@ -21,7 +21,7 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<Leader>fm', '<cmd>lua vim.lsp.buf.format({async = true})<CR>', opts)
 end
 
-local servers = { 'rust_analyzer'}
+local servers = { 'rust_analyzer', 'jdtls'}
 
 for _, lsp in pairs(servers) do
     require('lspconfig')[lsp].setup {
